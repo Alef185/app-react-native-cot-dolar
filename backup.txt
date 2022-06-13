@@ -92,3 +92,5 @@ const styles = StyleSheet.create({
 
 // https://www.youtube.com/watch?v=aRjfb_2M_64
 // https://www.youtube.com/watch?v=lrRdQ6lS-Pk
+
+/* Colocar ponto em .expo e .expo-shared
