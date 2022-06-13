@@ -1,0 +1,94 @@
+import { View, StyleSheet, Text, TextInput, TouchableOpacity, FlatList } from "react-native";
+import DateTimePicker from '@react-native-community/datetimepicker';
+
+export default function PainelData() {
+
+    return <>
+        <View style={styles.cardContainer}>
+
+            <View style={styles.gridLinha}>
+                <View style={styles.gridColuna}>
+                    <Text style={styles.titulo}>Data inicial:</Text>
+                    <TextInput 
+                        style={styles.input}
+                        placeholder={'__/__/____'}
+                        placeholderTextColor={'#D5E6F3'} 
+                    ></TextInput>
+                </View>
+                <View style={styles.gridColuna}>
+                    <Text style={styles.titulo}>Data final:</Text>
+                    <TextInput 
+                        style={styles.input}
+                        placeholder={'__/__/____'}
+                        placeholderTextColor={'#D5E6F3'}
+                    ></TextInput>
+                </View>
+            </View>
+            <View style={styles.botaoContainer}>
+                <TouchableOpacity style={styles.botao}>
+                    <Text style={styles.textoBotao}>Cotar dólar</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+
+        <View style={styles.cardContainer}>
+            
+        </View>
+    </>
+}
+const styles = StyleSheet.create({
+    cardContainer: {     
+        backgroundColor: '#3E4052',
+        borderRadius: 10,
+        marginTop: 10,
+        marginBottom: 10,
+        padding: 20,
+        justifyContent: 'center',
+    },
+    botaoContainer: {
+        alignItems: 'center',
+        marginTop: 10
+    },
+    botao: {
+        borderRadius: 10,
+        padding: 7,
+        width: '100%',
+        alignItems: 'center'
+    },
+    textoBotao: {
+        fontSize: 20,
+        lineHeight: 25,
+        fontWeight: '800',
+        color: '#ffffff',
+    },
+    gridColuna: {
+        flexDirection: 'column'
+    },
+    gridLinha: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    titulo: {
+        fontSize: 20,
+        lineHeight: 25,
+        fontWeight: '400',
+        color: '#D5E6F3',
+        marginBottom: 10,
+    },
+    input: {
+        fontSize: 20,
+        lineHeight: 25,
+        fontWeight: '200',
+        color: '#D5E6F3',
+        marginBottom: 5,
+        borderColor: '#FFA03B',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 5,
+        minWidth: '45%',
+        maxWidth: 160,
+    }
+});
+
+// https://www.youtube.com/watch?v=aRjfb_2M_64
+// https://www.youtube.com/watch?v=lrRdQ6lS-Pk
